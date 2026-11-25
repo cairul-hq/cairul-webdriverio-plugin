@@ -1,6 +1,6 @@
 import { stripVTControlCharacters } from 'node:util';
-import { z } from '@cairul/plugin-kit';
-import { counts, list, option, repeat, selectors, stdout, value } from '@cairul/plugin-kit/runner';
+import { z } from '@cairul/pdk';
+import { counts, list, option, repeat, selectors, stdout, value } from '@cairul/pdk/runner';
 
 function summarize(output) {
   const plain = stripVTControlCharacters(output);
